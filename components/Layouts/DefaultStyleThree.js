@@ -84,7 +84,7 @@ const DefaultStyleThree =()=> {
                                         </Link>
                                     </li>
                                     
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <Link activeClassName="active" href="#">
                                             <a href="#" className="nav-link">Pages <Icon.ChevronDown /></a>
                                         </Link>
@@ -169,7 +169,7 @@ const DefaultStyleThree =()=> {
                                                 </Link>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> */}
 
                                     {/* <li className="nav-item">
                                         <a href="#" className="nav-link">Shop <Icon.ChevronDown /></a>
