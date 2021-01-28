@@ -17,16 +17,16 @@ class Services extends Component {
                     <div className="row">
                         <div className="col-lg-4 col-sm-6 col-md-6">
                             <div className="agency-services-box">
-                                <img src={require("../../static/images/agency-image/agency-services-img1.jpg")} alt="image" />
+                                <img src={require("../../static/images/general/our services/Digital marketing.jpg")} alt="image" />
 
                                 <div className="content">
                                     <h3>
-                                        <Link href="#">
+                                        <Link href="/services">
                                             <a>Facebook Marketing</a>
                                         </Link>
                                     </h3>
 
-                                    <Link href="#">
+                                    <Link href="/services">
                                         <a className="read-more-btn">
                                             Read More <Icon.PlusCircle />
                                         </a>
@@ -37,16 +37,16 @@ class Services extends Component {
 
                         <div className="col-lg-4 col-sm-6 col-md-6">
                             <div className="agency-services-box">
-                                <img src={require("../../static/images/agency-image/agency-services-img2.jpg")} alt="image" />
+                                <img src={require("../../static/images/general/our services/Email marketing.jpg")} alt="image" />
 
                                 <div className="content">
                                     <h3>
-                                        <Link href="#">
+                                        <Link href="/services">
                                             <a>Email Marketing </a>
                                         </Link>
                                     </h3>
 
-                                    <Link href="#">
+                                    <Link href="/services">
                                         <a className="read-more-btn">
                                             Read More <Icon.PlusCircle />
                                         </a>
@@ -57,16 +57,16 @@ class Services extends Component {
                         
                         <div className="col-lg-4 col-sm-6 col-md-6">
                             <div className="agency-services-box">
-                            <img src={require("../../static/images/agency-image/agency-services-img3.jpg")} alt="image" />
+                            <img src={require("../../static/images/general/our services/SMs marketing.jpg")} alt="image" />
 
                                 <div className="content">
                                     <h3>
-                                        <Link href="#">
+                                        <Link href="/services">
                                             <a>SMS Marketing</a>
                                         </Link>
                                     </h3>
 
-                                    <Link href="#">
+                                    <Link href="/services">
                                         <a className="read-more-btn">
                                             Read More <Icon.PlusCircle />
                                         </a>
@@ -76,16 +76,16 @@ class Services extends Component {
                         </div>
                         <div className="col-lg-4 col-sm-6 col-md-6">
                             <div className="agency-services-box">
-                            <img src={require("../../static/images/agency-image/agency-services-img4.jpg")} alt="image" />
+                            <img src={require("../../static/images/general/our services/Ecommerce.jpg")} alt="image" />
 
                                 <div className="content">
                                     <h3>
-                                        <Link href="#">
+                                        <Link href="/services">
                                             <a>Ecommerce Website </a>
                                         </Link>
                                     </h3>
 
-                                    <Link href="#">
+                                    <Link href="/services">
                                         <a className="read-more-btn">
                                             Read More <Icon.PlusCircle />
                                         </a>
@@ -96,16 +96,16 @@ class Services extends Component {
                         
                         <div className="col-lg-4 col-sm-6 col-md-6">
                             <div className="agency-services-box">
-                            <img src={require("../../static/images/agency-image/agency-services-img5.jpg")} alt="image" />
+                            <img src={require("../../static/images/general/our services/Mobile apps.jpg")} alt="image" />
 
                                 <div className="content">
                                     <h3>
-                                        <Link href="#">
+                                        <Link href="/services">
                                             <a>Mobile Apps </a>
                                         </Link>
                                     </h3>
 
-                                    <Link href="#">
+                                    <Link href="/services">
                                         <a className="read-more-btn">
                                             Read More <Icon.PlusCircle />
                                         </a>
@@ -116,16 +116,16 @@ class Services extends Component {
                         
                         <div className="col-lg-4 col-sm-6 col-md-6">
                             <div className="agency-services-box">
-                                <img src={require("../../static/images/agency-image/agency-services-img6.jpg")} alt="image" />
+                                <img src={require("../../static/images/general/our services/Graphics design.jpg")} alt="image" />
 
                                 <div className="content">
                                     <h3>
-                                        <Link href="#">
+                                        <Link href="/services">
                                             <a>Graphics Design</a>
                                         </Link>
                                     </h3>
 
-                                    <Link href="#">
+                                    <Link href="/services">
                                         <a className="read-more-btn">
                                             Read More <Icon.PlusCircle />
                                         </a>

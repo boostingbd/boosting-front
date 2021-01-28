@@ -92,22 +92,22 @@ class Feedback extends Component {
 
                 {/* Shape Images */}
                 <div className="user-shape1">
-                    <img src={require("../../static/images/agency-image/agency-user1.png")} alt="shape" />
+                    <img style={{height:"95px"}} src={require("../../static/images/general/client photo/client1.jpg")} alt="shape" />
                 </div>
                 <div className="user-shape2">
-                    <img src={require("../../static/images/agency-image/agency-user2.png")} alt="shape" />
+                    <img style={{height:"95px"}} src={require("../../static/images/general/client photo/client2.jpg")} alt="shape" />
                 </div>
                 <div className="user-shape3">
-                    <img src={require("../../static/images/agency-image/agency-user3.png")} alt="shape" />
+                    <img style={{height:"95px"}} src={require("../../static/images/general/client photo/client3.jpg")} alt="shape" />
                 </div>
                 <div className="user-shape4">
-                    <img src={require("../../static/images/agency-image/agency-user4.png")} alt="shape" />
+                    <img style={{height:"95px"}} src={require("../../static/images/general/client photo/client4.jpg")} alt="shape" />
                 </div>
                 <div className="user-shape5">
-                    <img src={require("../../static/images/agency-image/agency-user5.png")} alt="shape" />
+                    <img style={{height:"95px"}} src={require("../../static/images/general/client photo/client5.jpg")} alt="shape" />
                 </div>
                 <div className="user-shape6">
-                    <img src={require("../../static/images/agency-image/agency-user6.png")} alt="shape" />
+                    <img style={{height:"95px"}} src={require("../../static/images/general/client photo/client6.jpg")} alt="shape" />
                 </div>
             </section>
         );

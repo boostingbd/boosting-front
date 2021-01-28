@@ -9,7 +9,7 @@ class AboutArea extends Component {
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-12">
                             <div className="agency-about-img">
-                                <img src={require("../../static/images/home_about.jpg")} alt="image" />
+                                <img src={require("../../static/images/general/home_about.jpg")} alt="image" />
                             </div>
                         </div>
 

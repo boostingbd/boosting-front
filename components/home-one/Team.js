@@ -48,12 +48,12 @@ class Team extends React.Component {
                             <div className="item col-lg-12">
                                 <div className="single-team">
                                     <div className="team-image">
-                                        <img src={require("../../static/images/team-image/team1.jpg")} alt="image" />
+                                        <img src={require("../../static/images/general/our Team/team1.jpg")} alt="image" />
                                     </div>
 
                                     <div className="team-content">
                                         <div className="team-info">
-                                            <h3>Josh Buttler</h3>
+                                            <h3>Khaled Hasan</h3>
                                             <span>CEO & Founder</span>
                                         </div>
 
@@ -91,7 +91,222 @@ class Team extends React.Component {
                             <div className="item col-lg-12">
                                 <div className="single-team">
                                     <div className="team-image">
-                                        <img src={require("../../static/images/team-image/team2.jpg")} alt="image" />
+                                        <img src={require("../../static/images/general/our Team/team2.jpg")} alt="image" />
+                                    </div>
+
+                                    <div className="team-content">
+                                        <div className="team-info">
+                                            <h3>Hridoy Khan</h3>
+                                            <span>Director</span>
+                                        </div>
+
+                                        <ul>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Facebook /></a>
+                                                </Link>
+                                                
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Twitter /></a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Linkedin /></a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Gitlab /></a>
+                                                </Link>
+                                            </li>
+                                        </ul>
+
+                                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="item">
+                            <div className="item col-lg-12">
+                                <div className="single-team">
+                                    <div className="team-image">
+                                        <img src={require("../../static/images/general/our Team/team3.jpg")} alt="image" />
+                                    </div>
+
+                                    <div className="team-content">
+                                        <div className="team-info">
+                                            <h3>Mahbubur Rahman</h3>
+                                            <span>PHP developer</span>
+                                        </div>
+
+                                        <ul>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Facebook /></a>
+                                                </Link>
+                                                
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Twitter /></a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Linkedin /></a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Gitlab /></a>
+                                                </Link>
+                                            </li>
+                                        </ul>
+
+                                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="item">
+                            <div className="item col-lg-12">
+                                <div className="single-team">
+                                    <div className="team-image">
+                                        <img src={require("../../static/images/general/our Team/team4.jpg")} alt="image" />
+                                    </div>
+
+                                    <div className="team-content">
+                                        <div className="team-info">
+                                            <h3>Shimul</h3>
+                                            <span>javascript Developer</span>
+                                        </div>
+
+                                        <ul>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Facebook /></a>
+                                                </Link>
+                                                
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Twitter /></a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Linkedin /></a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Gitlab /></a>
+                                                </Link>
+                                            </li>
+                                        </ul>
+
+                                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="item">
+                            <div className="item col-lg-12">
+                                <div className="single-team">
+                                    <div className="team-image">
+                                        <img src={require("../../static/images/general/our Team/team5.jpg")} alt="image" />
+                                    </div>
+
+                                    <div className="team-content">
+                                        <div className="team-info">
+                                            <h3>Shuvo</h3>
+                                            <span>Graphics Designer</span>
+                                        </div>
+
+                                        <ul>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Facebook /></a>
+                                                </Link>
+                                                
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Twitter /></a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Linkedin /></a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Gitlab /></a>
+                                                </Link>
+                                            </li>
+                                        </ul>
+
+                                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="item">
+                            <div className="item col-lg-12">
+                                <div className="single-team">
+                                    <div className="team-image">
+                                        <img src={require("../../static/images/general/our Team/team6.jpg")} alt="image" />
+                                    </div>
+
+                                    <div className="team-content">
+                                        <div className="team-info">
+                                            <h3>Sharif</h3>
+                                            <span>Digital marketer</span>
+                                        </div>
+
+                                        <ul>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Facebook /></a>
+                                                </Link>
+                                                
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Twitter /></a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Linkedin /></a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="#">
+                                                    <a><Icon.Gitlab /></a>
+                                                </Link>
+                                            </li>
+                                        </ul>
+
+                                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="item">
+                            <div className="item col-lg-12">
+                                <div className="single-team">
+                                    <div className="team-image">
+                                        <img src={require("../../static/images/general/our Team/team7.jpg")} alt="image" />
                                     </div>
 
                                     <div className="team-content">
@@ -134,7 +349,7 @@ class Team extends React.Component {
                             <div className="item col-lg-12">
                                 <div className="single-team">
                                     <div className="team-image">
-                                        <img src={require("../../static/images/team-image/team3.jpg")} alt="image" />
+                                        <img src={require("../../static/images/general/our Team/team8.jpg")} alt="image" />
                                     </div>
 
                                     <div className="team-content">
@@ -177,7 +392,7 @@ class Team extends React.Component {
                             <div className="item col-lg-12">
                                 <div className="single-team">
                                     <div className="team-image">
-                                        <img src={require("../../static/images/team-image/team4.jpg")} alt="image" />
+                                        <img src={require("../../static/images/general/our Team/team9.jpg")} alt="image" />
                                     </div>
 
                                     <div className="team-content">
@@ -220,222 +435,7 @@ class Team extends React.Component {
                             <div className="item col-lg-12">
                                 <div className="single-team">
                                     <div className="team-image">
-                                        <img src={require("../../static/images/team-image/team5.jpg")} alt="image" />
-                                    </div>
-
-                                    <div className="team-content">
-                                        <div className="team-info">
-                                            <h3>Corey Anderson</h3>
-                                            <span>Project Manager</span>
-                                        </div>
-
-                                        <ul>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Facebook /></a>
-                                                </Link>
-                                                
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Twitter /></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Linkedin /></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Gitlab /></a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-
-                                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="item">
-                            <div className="item col-lg-12">
-                                <div className="single-team">
-                                    <div className="team-image">
-                                        <img src={require("../../static/images/team-image/team1.jpg")} alt="image" />
-                                    </div>
-
-                                    <div className="team-content">
-                                        <div className="team-info">
-                                            <h3>Josh Buttler</h3>
-                                            <span>CEO & Founder</span>
-                                        </div>
-
-                                        <ul>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Facebook /></a>
-                                                </Link>
-                                                
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Twitter /></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Linkedin /></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Gitlab /></a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-
-                                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="item">
-                            <div className="item col-lg-12">
-                                <div className="single-team">
-                                    <div className="team-image">
-                                        <img src={require("../../static/images/team-image/team2.jpg")} alt="image" />
-                                    </div>
-
-                                    <div className="team-content">
-                                        <div className="team-info">
-                                            <h3>Alex Maxwel</h3>
-                                            <span>Marketing Manager</span>
-                                        </div>
-
-                                        <ul>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Facebook /></a>
-                                                </Link>
-                                                
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Twitter /></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Linkedin /></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Gitlab /></a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-
-                                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="item">
-                            <div className="item col-lg-12">
-                                <div className="single-team">
-                                    <div className="team-image">
-                                        <img src={require("../../static/images/team-image/team3.jpg")} alt="image" />
-                                    </div>
-
-                                    <div className="team-content">
-                                        <div className="team-info">
-                                            <h3>Janny Cotller</h3>
-                                            <span>Web Developer</span>
-                                        </div>
-
-                                        <ul>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Facebook /></a>
-                                                </Link>
-                                                
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Twitter /></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Linkedin /></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Gitlab /></a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-
-                                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="item">
-                            <div className="item col-lg-12">
-                                <div className="single-team">
-                                    <div className="team-image">
-                                        <img src={require("../../static/images/team-image/team4.jpg")} alt="image" />
-                                    </div>
-
-                                    <div className="team-content">
-                                        <div className="team-info">
-                                            <h3>Jason Statham</h3>
-                                            <span>UX/UI Designer</span>
-                                        </div>
-
-                                        <ul>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Facebook /></a>
-                                                </Link>
-                                                
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Twitter /></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Linkedin /></a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a><Icon.Gitlab /></a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-
-                                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="item">
-                            <div className="item col-lg-12">
-                                <div className="single-team">
-                                    <div className="team-image">
-                                        <img src={require("../../static/images/team-image/team5.jpg")} alt="image" />
+                                        <img src={require("../../static/images/general/our Team/team10.jpg")} alt="image" />
                                     </div>
 
                                     <div className="team-content">

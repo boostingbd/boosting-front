@@ -6,11 +6,18 @@ import GoTop from '../../../components/Layouts/GoTop'
 import PageTitle from '../../../components/products/PageTitle';
 import Items from '../../../components/services-category/Items';
 import axios from 'axios'
+import Head from 'next/head'
+
 
 const Products=({categories})=> {
   //console.log(products)
         return (
             <Preloader>
+              <Head>
+                <title>Services </title>
+                <meta property="og:title" content='Services' key="title" />
+      
+            </Head>
                 <Placeholder>
                     <div className="preloader">
                         <div className="spinner"></div>

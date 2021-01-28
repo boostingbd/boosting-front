@@ -48,7 +48,7 @@ const DefaultStyleThree =()=> {
                                     className="navbar-brand"
                                     onClick={() => window.location.refresh()}
                                 >
-                                    <img src={require("../../static/images/logo.png")} alt="logo" />
+                                    <img style={{height:"45px"}} src={require("../../static/images/general/logo.png")} alt="logo" />
                                 </a>
                             </Link>
 

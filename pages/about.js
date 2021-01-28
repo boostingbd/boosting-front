@@ -9,12 +9,18 @@ import Team from '../components/home-one/Team';
 import Footer from '../components/Layouts/Footer';
 import GoTop from '../components/Layouts/GoTop';
 import HeaderThree from '../components/Layouts/HeaderThree';
+import Head from 'next/head'
 
 class About extends React.Component {
     render() {
         return (
             <NoSSR>
                 <Preloader>
+                <Head>
+                <title>About Us </title>
+                <meta property="og:title" content='About Us' key="title" />
+      
+            </Head>
                     <Placeholder>
                         <div className="preloader">
                             <div className="spinner"></div>
