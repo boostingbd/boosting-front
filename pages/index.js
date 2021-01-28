@@ -21,10 +21,10 @@ export default () => (
         <Preloader>
             <Head>
                 <title>BoostingBD - Digital marketing agency In bangladesh </title>
-                <meta property="og:title" content="Digital marketing agency In bangladesh" key="title" />
+                {/* <meta property="og:title" content="Digital marketing agency In bangladesh" key="title" />
                 <meta property="og:description" content="Boostingbd Provide facebook advertising services more then 100+ clients  already. We are provide website development , mobile application development services. 
 Meta tag Facebook ads . facebook boost . page promote . website development. Node js website. Ecommerce development , mobile application" />
-                <meta property="og:image" content="../static/images/general/home_og.png" />
+                <meta property="og:image" content="../static/images/general/home_og.png" /> */}
             </Head>
             <Placeholder>
                 <div className="preloader">

@@ -8,6 +8,11 @@ class MyDocument extends Document {
                     {/* <meta charSet="utf-8" /> */}
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
                     <link rel="icon" type="image/png" href={require("../static/images/favicon.png")}></link>
+                    
+                <meta property="og:title" content="Digital marketing agency In bangladesh" key="title" />
+                <meta property="og:description" content="Boostingbd Provide facebook advertising services more then 100+ clients  already. We are provide website development , mobile application development services. 
+Meta tag Facebook ads . facebook boost . page promote . website development. Node js website. Ecommerce development , mobile application" />
+                <meta property="og:image" content={`../static/images/general/home_og.png`} />
                 </Head>
                 <body>
                     <Main />
