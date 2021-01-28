@@ -57,7 +57,7 @@ class Services extends Component {
                         
                         <div className="col-lg-4 col-sm-6 col-md-6">
                             <div className="agency-services-box">
-                            <img src={require("../../static/images/general/our services/SMs marketing.jpg")} alt="image" />
+                            <img src={require("../../static/images/general/our services/SMs marketing.jpg")} alt="SMs marketing" />
 
                                 <div className="content">
                                     <h3>
