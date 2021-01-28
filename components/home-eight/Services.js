@@ -17,7 +17,7 @@ class Services extends Component {
                     <div className="row">
                         <div className="col-lg-4 col-sm-6 col-md-6">
                             <div className="agency-services-box">
-                                <img src={require("../../static/images/general/our services/Digital marketing.jpg")} alt="image" />
+                                <img src={require("../../static/images/general/our services/Digital-marketing.jpg")} alt="image" />
 
                                 <div className="content">
                                     <h3>
@@ -37,7 +37,7 @@ class Services extends Component {
 
                         <div className="col-lg-4 col-sm-6 col-md-6">
                             <div className="agency-services-box">
-                                <img src={require("../../static/images/general/our services/Email marketing.jpg")} alt="image" />
+                                <img src={require("../../static/images/general/our services/Email-marketing.jpg")} alt="image" />
 
                                 <div className="content">
                                     <h3>
@@ -57,7 +57,7 @@ class Services extends Component {
                         
                         <div className="col-lg-4 col-sm-6 col-md-6">
                             <div className="agency-services-box">
-                            <img src={require("../../static/images/general/our services/SMs marketing.jpg")} alt="SMs marketing" />
+                            <img src={require("../../static/images/general/our services/sms-marketing.jpg")} alt="SMs marketing" />
 
                                 <div className="content">
                                     <h3>
@@ -96,7 +96,7 @@ class Services extends Component {
                         
                         <div className="col-lg-4 col-sm-6 col-md-6">
                             <div className="agency-services-box">
-                            <img src={require("../../static/images/general/our services/Mobile apps.jpg")} alt="image" />
+                            <img src={require("../../static/images/general/our services/Mobile-apps.jpg")} alt="image" />
 
                                 <div className="content">
                                     <h3>
@@ -116,7 +116,7 @@ class Services extends Component {
                         
                         <div className="col-lg-4 col-sm-6 col-md-6">
                             <div className="agency-services-box">
-                                <img src={require("../../static/images/general/our services/Graphics design.jpg")} alt="image" />
+                                <img src={require("../../static/images/general/our services/Graphics-design.jpg")} alt="image" />
 
                                 <div className="content">
                                     <h3>
