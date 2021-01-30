@@ -34,7 +34,7 @@ export class ProductImage extends Component {
             return (
                 <div key={index}>
                     <li className="item">
-                        <img style={{width:"20%"}} src={img} alt="image" />
+                        <img src={img} alt="image" />
                     </li>
                 </div>
             )
