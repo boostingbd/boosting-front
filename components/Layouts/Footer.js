@@ -17,7 +17,7 @@ export default class Footer extends React.Component {
                                         </a>
                                     </Link>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                                <p>In the last 3 years we provide services to more than 100 Clients. in our Experience we are always Trying to provide the best services from our end. We provide website design development and Digital marketing services For SME business owners. We are Always focused on Best level Services.</p>
                             </div>
                         </div>
 

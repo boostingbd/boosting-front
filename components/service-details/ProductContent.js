@@ -26,9 +26,9 @@ const ProductContent=({product})=>{
     
 
         return (
-            <section className="shop-details-area ptb-80">
+            <section className="shop-details-area ptb-80 ">
                 <ToastContainer />
-                <div className="container">
+                <div className="container pt-5">
                     <div className="row align-items-center">
                         <ProductImage productImages={product.productImages} />
 

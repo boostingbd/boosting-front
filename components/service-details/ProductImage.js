@@ -34,7 +34,7 @@ export class ProductImage extends Component {
             return (
                 <div key={index}>
                     <li className="item">
-                        <img src={img} alt="image" />
+                        <img style={{width:"20%"}} src={img} alt="image" />
                     </li>
                 </div>
             )
@@ -74,6 +74,7 @@ export class ProductImage extends Component {
                                     focusOnSelect={true}
                                     arrows={false}
                                     dots={false}
+                                    
                                 >
                                     {
                                         this.renderSliderSubImages()
