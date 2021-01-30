@@ -3,6 +3,8 @@ import Router from 'next/router';
 import { useSelector } from 'react-redux'
 import Link from '../common/ActiveLink'
 import * as Icon from 'react-feather';
+import {useDispatch} from 'react-redux'
+import Cookies from "js-cookie";
 
 const DefaultStyleThree =()=> {
 
@@ -35,7 +37,11 @@ const DefaultStyleThree =()=> {
         //     layOutCls = 'p-relative';
         // }
     
-        
+        const handleLogout=()=>{
+            Cookies.remove("boostingbd_token");
+  
+            window.location.pathname='/'
+        }
 
         
         return (
@@ -247,9 +253,13 @@ const DefaultStyleThree =()=> {
                             {
                                 auth && auth.authenticated ?
                                 (
+                                    <>
                                     <Link href="/dashboard">
                                     <a className="btn btn-gradient">dashboard</a>
                                     </Link>
+                                    <span onClick={()=>handleLogout()} style={{color:"red",marginLeft:"10px",fontWeight:"bold",cursor:"pointer"}}><Icon.LogOut /></span>
+                                    </>
+
                                 ) :
                                 (
                                     <Link href="/login">
