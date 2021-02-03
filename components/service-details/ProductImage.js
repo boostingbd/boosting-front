@@ -33,7 +33,7 @@ export class ProductImage extends Component {
         return this.props.productImages.map((img,index) => {
             return (
                 <div key={index}>
-                    <li className="item d-flex justify-content-start">
+                    <li className="item d-flex">
                         <img style={{height:"100px",objectFit:"contain"}} src={img} alt="image" />
                     </li>
                 </div>

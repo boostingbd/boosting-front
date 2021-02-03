@@ -71,7 +71,6 @@ function ProfileSettings() {
         setIsEditLoading(true)
         let data = {
             userName,
-            mobile,
             paymentNumber,
             bankDetails,
         }
@@ -172,7 +171,7 @@ function ProfileSettings() {
                 onChange={(e) => setMobile(e.target.value)}
                 type="text"
                 className={styles.input}
-                disabled={!isEdit}
+                disabled={true}
                 placeholder="Mobile Number" />
 
             <label className={styles.label}>Bkash/Rocket</label>

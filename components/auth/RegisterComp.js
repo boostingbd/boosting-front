@@ -6,17 +6,19 @@ import Cookies from "js-cookie";
 import Router from "next/router";
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { ToastContainer, toast } from 'react-toastify';
+import VerifyOTP from './VerifyOTP';
 
 function RegisterComp() {
     const [userName, setUserName] = useState("")
-    const [email, setEmail] = useState("")
+    const [mobile, setMobile] = useState("")
     const [accountType, setAccountType] = useState("personal")
     const [password, setPassword] = useState("")
-    const [confirmPassword, setConfirmPassword] = useState("")
     const [error, setError] = useState(null)
     const [isLoading, setLoading] = useState(false)
 
     let dispatch = useDispatch()
+
+    const [isVerify, setIsVerify] = useState(false)
 
     
 
@@ -25,25 +27,25 @@ function RegisterComp() {
         setLoading(true)
         let data = {
             userName,
-            email,
+            mobile,
             accountType,
             password,
-            confirmPassword
         }
         axios.post(`/user/register`, data)
             .then((res) => {
                 if (res.data.success) {
-                    toast.success('User registered successfully', {
-                        position: "bottom-left",
-                        autoClose: 5000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true
-                    })
+                    // toast.success('User registered successfully', {
+                    //     position: "bottom-left",
+                    //     autoClose: 5000,
+                    //     hideProgressBar: false,
+                    //     closeOnClick: true,
+                    //     pauseOnHover: true,
+                    //     draggable: true
+                    // })
                     setError(null)
                     setLoading(false)
-                    Router.push("/login");
+                    setIsVerify(true)
+                    //Router.push("/login");
                 }
             })
             .catch((err) => {
@@ -56,9 +58,10 @@ function RegisterComp() {
     return (
         <section className="pricing-area ptb-80 bg-f9f6f6">
         <ToastContainer />
-            <div className="container">
+            <div className="container py-5">
 
-                <form style={{ padding: "0 15vw" }}>
+                {
+                    isVerify ? <VerifyOTP mobile={mobile} /> : <form style={{ padding: "0 15vw" }}>
                     <h3 style={{ marginBottom: "10px" }} className='text-center'>Register</h3>
                     {
                         error && error.error && <div class="alert alert-danger" role="alert">
@@ -83,16 +86,16 @@ function RegisterComp() {
 
 
                     <div className="form-group">
-                        <label>Email address</label>
+                        <label>Mobile Number: </label>
                         <input
-                            value={email}
+                            value={mobile}
                             onChange={(e) =>
-                                setEmail(e.target.value)}
-                            type="email"
-                            className={`form-control ${error && error.email && "is-invalid"}`}
-                            placeholder="Enter email" />
+                                setMobile(e.target.value)}
+                            type="text"
+                            className={`form-control ${error && error.mobile && "is-invalid"}`}
+                            placeholder="01*********" />
                         {
-                            error && error.email && <div class="invalid-feedback">{error.email}</div>
+                            error && error.mobile && <div class="invalid-feedback">{error.mobile}</div>
                         }
                     </div>
 
@@ -117,18 +120,7 @@ function RegisterComp() {
                         }
                     </div>
 
-                    <div className="form-group">
-                        <label>Password</label>
-                        <input
-                            value={confirmPassword}
-                            onChange={(e) => setConfirmPassword(e.target.value)}
-                            type="password"
-                            className={`form-control ${error && error.confirmPassword && "is-invalid"}`}
-                            placeholder="Enter confirm password" />
-                        {
-                            error && error.confirmPassword && <div class="invalid-feedback">{error.confirmPassword}</div>
-                        }
-                    </div>
+                   
 
                     <button onClick={(e) => handleRegister(e)} type="submit" className="btn btn-primary btn-block">
                         {
@@ -140,7 +132,10 @@ function RegisterComp() {
                         Already have an account?<Link href="/login"><a>Login now</a></Link>
                     </p>
                 </form>
+                }
+
             </div>
+               {/* <button onClick={()=>setIsVerify(!isVerify)}>otp</button>  */}
         </section>
     );
 
