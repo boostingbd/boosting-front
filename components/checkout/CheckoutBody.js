@@ -83,7 +83,7 @@ function CheckoutBody() {
 
     useEffect(() => {
         if (authenticated) {
-            if (number.length && name.length && method.radioGroup.length && method.paymentDetails.length) {
+            if (method.radioGroup.length && method.paymentDetails.length) {
                 return setActiveButton(false)
             } else {
                 return setActiveButton(true)
