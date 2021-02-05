@@ -49,8 +49,8 @@ function CheckoutBody() {
             product:service._id,
             total:parseInt(service.price) + ((parseInt(service.VAT)/100)*parseInt(service.price)),
             paymentMethod:method.radioGroup,
-            name,
-            mobile:number,
+            name:userData.userName,
+            mobile:userData.mobile,
             paymentDetails:method.paymentDetails
         }
         console.log(data)

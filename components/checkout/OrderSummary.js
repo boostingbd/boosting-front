@@ -6,6 +6,7 @@ import BeatLoader from "react-spinners/BeatLoader";
 
 
 const OrderSummary=({disabled,handleChange,method,loading})=>{
+    const { authenticated,userData } = useSelector(state => state.auth)
     const {total,addedItems} = useSelector(state=>state.cart)
     const {service} = useSelector(state=>state.checkout)
     
