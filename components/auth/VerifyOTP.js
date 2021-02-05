@@ -67,7 +67,7 @@ function VerifyOTP({ mobile }) {
     const renderer = ({ hours, minutes, seconds, completed }) => {
         if (completed) {
             // Render a completed state
-            return <span>Did't received the code ? <span onClick={() => resendOTP()} style={{ color: "#44CD6F", cursor: "pointer" }}>Resend</span></span>;
+            return <span>Didn't received the code ? <span onClick={() => resendOTP()} style={{ color: "#44CD6F", cursor: "pointer" }}>Resend</span></span>;
         } else {
             // Render a countdown
             return <span>Request new code in {minutes} minutes : {seconds} seconds</span>;

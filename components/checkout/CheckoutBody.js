@@ -8,7 +8,7 @@ import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 
 function CheckoutBody() {
-    const { authenticated } = useSelector(state => state.auth)
+    const { authenticated,userData } = useSelector(state => state.auth)
     const { service } = useSelector(state => state.checkout)
     const [activeButton, setActiveButton] = useState(true)
     const [loading, setLoading] = useState(false)
@@ -130,12 +130,13 @@ function CheckoutBody() {
                                         <>
                                             <div className="col-lg-12 col-md-12">
                                                 <div className="form-group">
-                                                    <label>Full Name <span className="required">*</span></label>
+                                                    <label>Name <span className="required">*</span></label>
                                                     <input
+                                                    disabled
                                                         type="text"
                                                         className="form-control"
                                                         onChange={(e) => setName(e.target.value)}
-                                                        value={name}
+                                                        value={userData && userData.userName}
 
                                                     />
                                                 </div>
@@ -148,11 +149,12 @@ function CheckoutBody() {
                                                 <div className="form-group">
                                                     <label>Phone <span className="required">*</span></label>
                                                     <input
+                                                    disabled
                                                         type="text"
                                                         name="phone"
                                                         className="form-control"
                                                         onChange={(e) => setNumber(e.target.value)}
-                                                        value={number}
+                                                        value={userData && userData.mobile}
                                                     />
 
                                                 </div>

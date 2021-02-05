@@ -147,9 +147,9 @@ function ProfileSettings() {
             <ToastContainer />
             <div class={styles.heading}>
                 <span style={{ fontSize: "20px" }} >Personal Information</span>
-                {
+                {/* {
                     !isEdit && <span className={styles.text} onClick={() => setIsEdit(true)}>Change Information</span>
-                }
+                } */}
 
             </div>
 

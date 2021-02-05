@@ -13,8 +13,7 @@ class WhatWeOffer extends Component {
             <h2>Our Featured Solutions</h2>
             <div className="bar"></div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            We provide specially Digital marketing , Website development and Design Services For SME business owners
             </p>
           </div>
 
