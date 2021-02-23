@@ -11,6 +11,7 @@ import Pricing from '../components/home-eight/Pricing';
 import Projects from '../components/home-eight/project/Projects';
 import Services from '../components/home-eight/Services';
 import WhatWeOffer from '../components/home-eight/WhatWeOffer';
+import SearchService from '../components/home-eight/SearchService';
 import Footer from '../components/Layouts/Footer';
 import GoTop from '../components/Layouts/GoTop';
 import HeaderThree from '../components/Layouts/HeaderThree';
@@ -34,6 +35,7 @@ Meta tag Facebook ads . facebook boost . page promote . website development. Nod
             <HeaderThree />
 
             <MainBanner />
+            <SearchService />
             <WhatWeOffer />
             <AboutArea />
             <Services />

@@ -9,7 +9,7 @@ import axios from 'axios'
 import Head from 'next/head'
 
 
-const Products=({categories})=> {
+const Products=()=> {
   //console.log(products)
         return (
             <Preloader>
@@ -24,20 +24,20 @@ const Products=({categories})=> {
                     </div>
                 </Placeholder>
                 <HeaderThree />
-                <Items categories={categories} />
+                <Items />
                 <Footer />
                 <GoTop scrollStepInPx="50" delayInMs="16.66" />
             </Preloader>
         )
 }
-export async function getServerSideProps(context) {
- let slug = context.params.slug
-    let res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/product/category`)
-    let selected = await res.data.category.filter(cat=>cat.slug === slug)
+// export async function getServerSideProps(context) {
+//  let slug = context.params.slug
+//     let res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/product/category`)
+//     let selected = await res.data.category.filter(cat=>cat.slug === slug)
 
 
-    return {
-      props: {categories:selected[0].children}, // will be passed to the page component as props
-    }
-  }
+//     return {
+//       props: {categories:selected[0].children}, // will be passed to the page component as props
+//     }
+//   }
 export default Products

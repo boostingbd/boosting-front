@@ -7,12 +7,19 @@ import { addToCart } from '../../store/actions/cartActions';
 import QuickView from './QuickView';
 import ItemsRow from './ItemsRow'
 import axios from 'axios'
+import {useRouter} from 'next/router'
 
 
-const Items =({categories})=> {
-console.log(categories)
-  
-    const {products} = useSelector(state=>state.cart)
+const Items =()=> {
+    const [categories, setCategories] = useState([])
+    let Router = useRouter()
+    useEffect(() => {
+        axios.get(`/product/category`)
+        .then(res=>{
+            let selected = res.data.category.filter(cat=>cat.slug === Router.query.slug)
+            setCategories(selected[0].children)
+        })
+    }, [])
 
   
         return (

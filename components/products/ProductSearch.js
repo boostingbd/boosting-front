@@ -8,6 +8,9 @@ import QuickView from './QuickView';
 import {useRouter} from 'next/router'
 import axios from 'axios'
 import {CircularProgress} from '@material-ui/core'
+import SearchService from '../home-eight/SearchService';
+
+
 
 const Items =()=> {
     const [products, setProducts] = useState([])
@@ -17,16 +20,17 @@ const Items =()=> {
     let Router = useRouter()
     useEffect(() => {
         setLoading(true)
-        axios.get(`/product/categoryproduct/${Router.query.slug}?limit=12`)
+        axios.get(`/product/search?search=${Router.query.query}&category=${Router.query.cat}`)
         .then(res=>{
             setLoading(false)
-            setProducts(res.data.product)
+            setProducts(res.data.products)
+                //console.log(res.data.products);
         })
         .catch(err=>{
             setLoading(false)
             console.log(err);
         })
-    }, [])
+    }, [Router])
     
     const handleOrder = (data) => {
         dispatch({
@@ -38,11 +42,15 @@ const Items =()=> {
         Router.push('/checkout')
     
     }
+
+    console.log(Router)
   
         return (
             <section className="shop-area ptb-80">
+                <SearchService />
                 <ToastContainer />
                 <div className="container">
+
                     <div className="woocommerce-topbar">
                         <div className="row align-items-center">
                             <div className="col-lg-9 col-md-7">
@@ -69,8 +77,8 @@ const Items =()=> {
                     <div className="row">
 
                     {
-                        loading ? <div className='w-100 text-center'><CircularProgress /></div>:
-                    products.length ? products.map((data, idx) => (
+                        loading ? <div className='w-100 d-flex justify-content-center'><CircularProgress /></div>:
+                    products.length >0 ? products.map((data, idx) => (
                         <div className="col-lg-3 col-md-6" key={idx}>
                             <div className="single-products">
                                 <div className="products-image">

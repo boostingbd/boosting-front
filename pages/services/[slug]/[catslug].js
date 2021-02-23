@@ -7,7 +7,7 @@ import PageTitle from '../../../components/products/PageTitle';
 import Items from '../../../components/products/Items';
 import axios from 'axios'
 
-const Products=({products})=>{
+const Products=()=>{
     
         return (
             <Preloader>
@@ -18,7 +18,7 @@ const Products=({products})=>{
                 </Placeholder>
                 <HeaderThree />
                 {/* <PageTitle /> */}
-                <Items products={products}/>
+                <Items/>
                 <Footer />
                 <GoTop scrollStepInPx="50" delayInMs="16.66" />
             </Preloader>
@@ -26,15 +26,15 @@ const Products=({products})=>{
     
 }
 
-export async function getServerSideProps(context) {
-    let slug = context.params.catslug
-    let res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/product/categoryproduct/${slug}?limit=12`)
+// export async function getServerSideProps(context) {
+//     let slug = context.params.catslug
+//     let res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/product/categoryproduct/${slug}?limit=12`)
     
 
 
-    return {
-      props: {products:res.data.product}, // will be passed to the page component as props
-    }
-  }
+//     return {
+//       props: {products:res.data.product}, // will be passed to the page component as props
+//     }
+//   }
 
 export default Products

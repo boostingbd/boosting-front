@@ -7,12 +7,28 @@ import { addToCart } from '../../store/actions/cartActions';
 import QuickView from './QuickView';
 import ItemsRow from './ItemsRow'
 import axios from 'axios'
+import CircularProgress from '@material-ui/core/CircularProgress';
 
-
-const Items =({categories})=> {
-console.log(categories)
+const Items =()=> {
+const [categories, setCategories] = useState([])
+const [loading, setLoading] = useState(false)
   
-    const {products} = useSelector(state=>state.cart)
+   useEffect(() => {
+
+    (async () => {
+        setLoading(true)
+        let res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/setting/getsetting`)
+        var sorted = res.data.setting.serviceOptions.sort((a,b)=>{
+            return parseInt(a.position) - parseInt(b.position)
+          })
+          setCategories(sorted)
+          setLoading(false)
+    })();
+
+
+
+    
+   }, [])
 
   
         return (
@@ -42,7 +58,9 @@ console.log(categories)
                         </div>
                     </div> */}
 
-                    {categories && categories.map((cat,index)=>{
+                    {
+                        loading? <div className='text-center mt-4'><CircularProgress /></div>:
+                    categories && categories.map((cat,index)=>{
                         return(
                             <ItemsRow key={index} category={cat} />
                         )
