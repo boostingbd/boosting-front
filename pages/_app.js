@@ -1,5 +1,5 @@
 
-import '../static/css/bootstrap.min.css'
+//import '../static/css/bootstrap.min.css'
 import '../static/css/slick.css'
 import '../static/css/animate.css'
 import '../static/css/flaticon.css'
