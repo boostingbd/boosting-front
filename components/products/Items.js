@@ -17,7 +17,7 @@ const Items =()=> {
     let Router = useRouter()
     useEffect(() => {
         setLoading(true)
-        axios.get(`/product/categoryproduct/${Router.query.slug}?limit=12`)
+        axios.get(`/product/subcategoryproduct/${Router.query.catslug}?limit=12`)
         .then(res=>{
             setLoading(false)
             setProducts(res.data.product)

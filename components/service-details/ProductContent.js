@@ -113,7 +113,7 @@ const ProductContent=({product})=>{
                                     </div>
                                 </div>
 
-                                <div className="products-share-social">
+                                {/* <div className="products-share-social">
                                     <span>Share:</span>
 
                                     <ul>
@@ -138,7 +138,8 @@ const ProductContent=({product})=>{
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> */}
+                                <div class="addthis_inline_share_toolbox_3ydc mt-3"></div>
                             </div>
                         </div>
 

@@ -21,7 +21,7 @@ function ItemsRow({ category }) {
     useEffect(()=>{
         setParent(Router.router.query.slug)
         setLoading(true)
-        axios.get(`/product/categoryproduct/${category.slug}?limit=4`)
+        axios.get(`/product/subcategoryproduct/${category.slug}?limit=4`)
         .then(res=>{
             if(res.data.success){
                 setProducts(res.data.product)
