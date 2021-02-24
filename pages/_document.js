@@ -17,8 +17,8 @@ Meta tag Facebook ads . facebook boost . page promote . website development. Nod
                 </Head>
                 <body>
                     <Main />
-                    <NextScript />
                     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6035fdcca4f91b8c"></script>
+                    <NextScript />
                 </body>
             </Html>
         )
